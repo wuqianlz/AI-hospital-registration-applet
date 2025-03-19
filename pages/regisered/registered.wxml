@@ -1,0 +1,19 @@
+<van-calendar title="请选择挂号日期" poppable="{{ false }}" show-confirm="{{ false }}" class="calendar" />
+<view class="registered_input">
+        <input type="text" placeholder="请输入姓名" bindinput="getName"/>
+        <input type="text" placeholder="请输入科室" bindinput="getDepartment"/>
+        <input type="text" placeholder="请输入手机号" bindinput="getPhone"/>
+</view>
+<view class="radio-group">
+  <radio-group bindchange="radioChange">
+    <label class="radio-label" for="male">
+      <radio id="male" value="男" checked="{{gender === '男'}}" /> 男
+    </label>
+    <label class="radio-label" for="female">
+      <radio id="female" value="女" checked="{{gender === '女'}}" /> 女
+    </label>
+  </radio-group>
+</view>
+<view class="submit_btn" bind:tap="submit">
+  <text>提交</text>
+</view>

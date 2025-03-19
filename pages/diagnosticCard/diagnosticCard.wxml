@@ -1,0 +1,26 @@
+<view>
+    <wxs module="_">
+    module.exports.getText = function(value, curr) { 
+      if (value > curr) return '已完成'; 
+      if (value == curr) return '当前步骤'; 
+      return '未完成'; 
+    }
+  </wxs>
+</view>
+
+<view class="block">
+  <t-steps current="{{first}}" bind:change="onFirstChange">
+    <t-step-item wx:for="{{4}}" wx:key="index" title="{{_.getText(first, index)}}" content="{{ content[index].text }}" />
+  </t-steps>
+</view>
+
+<t-input label="{{stepLabels[first]}}" placeholder="{{currentPlaceholder}}" value="{{stepInputs[first]}}"  bindchange="handleInputChange"/>
+
+<view class="button-example">
+  <t-button theme="light" block size="large" t-class="group-btn-left" bind:tap="prevStep" style="width: 50%;  margin-right: 15rpx;">上一步</t-button>
+
+  <t-button theme="primary" block size="large" t-class="group-btn" bind:tap="nextStep"style="width: 50%;  margin-left: 15rpx;" wx:if="{{!showSubmitButton}}">下一步</t-button>
+
+  <t-button theme="primary" size="large" block bind:tap="submit" style="width: 50%;  margin-left: 15rpx;" wx:if="{{showSubmitButton}}">提交</t-button>
+</view>
+

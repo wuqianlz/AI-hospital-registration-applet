@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "关于小程序",
+  "usingComponents": {
+    "towxml":"/towxml/towxml"
+  }
+}

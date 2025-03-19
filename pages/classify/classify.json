@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "门诊",
+  "usingComponents": {
+    "van-tree-select": "@vant/weapp/tree-select/index"
+  }
+}

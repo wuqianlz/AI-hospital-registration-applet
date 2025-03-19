@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "设置",
+  "component": true,
+  "usingComponents": {
+    "van-notice-bar": "@vant/weapp/notice-bar/index",
+    "van-config-provider": "@vant/weapp/config-provider/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-share-sheet": "@vant/weapp/share-sheet/index",
+    "van-icon": "@vant/weapp/icon/index"
+  }
+  
+}

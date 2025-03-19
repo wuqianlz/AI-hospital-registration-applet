@@ -1,0 +1,197 @@
+.top_container {
+  height: 100%;
+  padding-top: 10rpx;
+  background-color: rgba(255, 255, 255, 0.959);
+
+}
+
+.top_container .box_swiper {
+  height: 300rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-bottom: 50rpx;
+}
+
+.tabs {
+  display: flex;
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  margin: 0 5px;
+  padding: 5px;
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  margin-left: 6rpx;
+}
+
+.header text {
+  font-size: 18px;
+  margin-left: 8rpx;
+}
+
+.twotitle {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-left: 18rpx;
+  margin-bottom: 5rpx;
+  font-size: 18px;
+}
+
+
+.container {
+  height: 100%;
+  /* display: flex;
+  flex-direction: column;  */
+  align-items: center;
+  margin-left: 0rpx;
+  padding-top: 5rpx;
+  padding-bottom: 5rpx;
+
+}
+
+.scroll-x {
+  width: 100%;
+  white-space: nowrap;
+  background-color: rgb(255, 255, 255);
+}
+
+.scroll-x view {
+  display: inline-block;
+  width: 300rpx;
+  height: 130rpx;
+}
+
+.scroll-x .th_list {
+  height: 335rpx;
+  width: 225rpx;
+  background-color: rgba(255, 254, 254, 0.8);
+  border-radius: 16%;
+  margin-bottom: 25rpx;
+  margin-top: 22rpx;
+  margin-left: 25rpx;
+  margin-right: 25rpx;
+  padding-left: 20rpx;
+  box-shadow: 0 0 1px rgba(117, 146, 190, 0.8);
+}
+
+.scroll-x .th_list .th_avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110rpx;
+  margin-left: 50rpx;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  width: 45%;
+  margin-bottom: 20rpx;
+}
+
+.icon {
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 40rpx;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15rpx;
+}
+
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx;
+  height: 100vh;
+  /* 如果需要占满整个视口 */
+}
+
+.department-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.department-item {
+  height: 300rpx;
+  /* display: flex;
+  flex-direction: column; */
+  align-items: center;
+  border-radius: 25px;
+}
+
+.department-item .ti_box {
+  height: 180rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.department-icon {
+  width: 40px;
+  height: 40px;
+  margin-left: 30rpx;
+  margin-bottom: 0rpx;
+  align-items: center;
+  justify-content: center;
+}
+
+.department-name {
+  margin-right: 45px;
+  width: 100rpx;
+  font-size: 15px;
+  display: grid;
+}
+
+.image-display {
+  margin-top: 20rpx;
+  text-align: center;
+}
+
+.selected-image {
+  width: 100%;
+  /* 或者其他你需要的宽度 */
+  height: auto;
+  /* 保持图片比例 */
+  margin-bottom: 20rpx;
+}
+
+.threetitle {
+  display: flex;
+  align-items: center;
+  padding-left: 20rpx;
+  margin-left: 18rpx;
+  font-size: 18px;
+
+}
+
+.th_box_text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rpx;
+}
+
+.more {
+  margin-right: 30rpx;
+  align-items: center;
+  font-size: 28rpx;
+}

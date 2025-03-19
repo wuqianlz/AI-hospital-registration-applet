@@ -1,0 +1,11 @@
+/* pages/map/map.wxss */
+.main{
+  height: 100%;
+  width: 100%;
+  padding-bottom: 50rpx;
+}
+.box{
+  height: 200rpx;
+  width: 100%;
+  margin-top: 100rpx;
+}

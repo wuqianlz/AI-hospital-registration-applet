@@ -1,0 +1,31 @@
+<wxs module="_">
+  module.exports.contains = function(arr, target) {
+    return arr.indexOf(target) > -1;
+  }
+</wxs>
+<view class="wrapper">
+  <t-collapse value="{{activeValues}}" theme="card" bind:change="handleChange">
+    <t-collapse-panel
+      header="就诊卡"
+      header-right-content="{{_.contains(activeValues, 0) ? '收起' : '展开'}}"
+      value="{{0}}"
+      expandIcon
+    >
+      <!-- 使用 wx:for 来遍历 list 数组 -->
+      <block wx:for="{{list}}" wx:key="unique">
+        <view>
+          {{"姓名：" + item.name}}
+        </view>
+        <view>
+          {{"性别：" + item.gender}}
+        </view>
+        <view>
+          {{"手机号：" + item.phoneNumber}}
+        </view>
+        <view>
+          {{"身份证号：" + item.identificationNumber}}
+        </view>
+      </block>
+    </t-collapse-panel>
+  </t-collapse>
+</view>

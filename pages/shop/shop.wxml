@@ -1,0 +1,73 @@
+<view class="top_container">
+  <view>
+    <view class="box_swiper">
+      <swiper indicator-dots="{{true}}" autoplay="true" interval="5000" duration="500" style="height: 350rpx; padding-left: 10rpx;padding-right: 10rpx;">
+        <block wx:for="{{goods}}" wx:key="this">
+          <swiper-item wx:if="{{item.id<5}}" style="position: absolute; height: 300rpx;">
+            <image class="goods-image" style="width: 693rpx; height: 350rpx; display: inline-block; box-sizing: border-box" src="{{item.goodsImg}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <!-- 搜索框 -->
+    <van-search value="{{ value }}" placeholder="请输入搜索关键词" />
+    <!-- 微服务 -->
+    <view class="containers" style="margin-top: 5rpx;">
+      <view class="header">
+        <text>医院微服务</text>
+      </view>
+      <view class="content">
+        <view class="item" wx:for="{{items}}" wx:key="name">
+          <image class="icon"></image>
+          <text>{{item.name}}</text>
+        </view>
+      </view>
+    </view>
+
+    <view>
+      <text class="twotitle">主治科室</text>
+      <!-- 滑动 -->
+      <scroll-view class="scroll-x" scroll-x>
+        <!-- 科室列表部分 -->
+        <view class="container">
+          <view class="department-list">
+            <view class="department-item" wx:for="{{deparments}}" wx:key="index">
+              <view class="ti_box">
+                <view>
+                  <image class="department-icon" src="{{item.image}}" mode="aspectFit"></image>
+                </view>
+                <view style="margin-top: 19rpx; ">
+                  <text class="department-name">{{item.departmentName}}</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class="th_box_text">
+      <text class="threetitle">名医堂</text>
+      <text class="more">更多></text>
+    </view>
+    <!-- 名医box -->
+    <view class="th_box" bind:tap="registered">
+      <scroll-view class="scroll-x" scroll-x>
+      <!-- listbox -->
+        <view class="th_list" wx:for="{{list}}" wx:key="name">
+        <!-- 头像 -->
+          <view class="th_avatar">
+            <image src="{{item.image}}" style="height: 110rpx;width: 185rpx; border-radius: 100%; margin-top: 65rpx;" />
+          </view>
+          <!-- name or -->
+          <view style="display: flex; flex-direction: column; align-items: center; width: 140rpx;margin-left: 34rpx; margin-top: 50rpx;">
+            <text style="font-size: 40rpx;">{{item.name}}</text>
+            <view style="margin-top: 10rpx;display: flex; flex-direction: column; align-items: center;">
+              <text style=" font-size: 26rpx;">{{item.deparment}}</text>
+              <text style=" padding-top: 5rpx; font-size: 30rpx;">{{item.introduce}}</text>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

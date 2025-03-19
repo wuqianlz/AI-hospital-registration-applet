@@ -1,0 +1,109 @@
+.register_bg{
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -1;
+}
+.register_bg image{
+  height: 100%;
+  width: 100%;
+}
+
+.register_body{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.register_main{
+  width: 85%;
+  height: 668rpx;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20rpx;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 20rpx;
+  backdrop-filter: blur(15rpx);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  color: #555;
+  /* box-shadow: 0rpx 3rpx 20rpx rgb(0, 0, 0,0.1); */
+}
+
+.register_input{
+  width: 90%;
+  height: 350rpx;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.register_input input{
+  height: 90rpx;
+  background-color: rgba(255, 255, 255,0.2);
+  backdrop-filter: blur(30rpx);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 15rpx;
+  text-align: center;
+  box-shadow: 0rpx 0rpx 15rpx rgb(0, 0, 0,0.1);
+
+}
+
+.register_btn{
+  margin-top: 35rpx;
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+  text-align: center;
+  height: 90rpx;
+  border-radius: 15rpx;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 102, 255, 0.2);
+  backdrop-filter: blur(10rpx);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0rpx 0rpx 15rpx rgb(0, 0, 0,0.1);
+  
+}
+
+.to_register{
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 35rpx;
+  text-shadow: 0rpx 0rpx 15rpx rgb(0, 0, 0,0.1);
+
+}
+.to_register view{
+  color: rgb(0, 110, 255);
+}
+.forget_pwd{
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-top: 35rpx;
+  text-shadow: 0rpx 0rpx 15rpx rgb(0, 0, 0,0.1);
+
+}
+.nullbox{
+  height: 40%;
+}
+
+
+
+
+

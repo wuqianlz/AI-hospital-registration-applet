@@ -1,0 +1,12 @@
+{
+  "component": true,
+  "styleIsolation": "apply-shared",
+  "navigationBarTitleText": "添加就诊卡",
+  "usingComponents": {
+    "t-steps": "tdesign-miniprogram/steps/steps",
+    "t-step-item": "tdesign-miniprogram/step-item/step-item",
+    "t-input": "tdesign-miniprogram/input/input",
+    "t-button": "tdesign-miniprogram/button/button",
+    "t-fab": "tdesign-miniprogram/fab/fab"
+  }
+}

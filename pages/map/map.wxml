@@ -1,0 +1,6 @@
+<view class="main">
+  <view class="box1">
+    <web-view src="{{url}}" />
+  </view>
+  <view class="box"></view>
+</view>

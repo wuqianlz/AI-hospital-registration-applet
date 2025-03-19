@@ -1,0 +1,24 @@
+<view class="container">
+  <view class="picker-container">
+    <picker mode="date" value="{{alarmDate}}" start="2000-01-01" end="2100-12-31" bindchange="bindDateChange">
+      <view class="picker">
+        <text class="picker-label">选择日期：</text>
+        <text>{{alarmDate}}</text>
+      </view>
+    </picker>
+  </view>
+
+  <view class="picker-container">
+    <picker mode="time" value="{{alarmTime}}" start="00:00" end="23:59" bindchange="bindTimeChange">
+      <view class="picker">
+        <text class="picker-label">选择时间：</text>
+        <text>{{alarmTime}}</text>
+      </view>
+    </picker>
+  </view>
+  
+  <view class="input-container">
+    <input type="text" placeholder="请输入提示文字" value="{{alarmText}}" bindinput="bindAlarmTextChange" class="alarm-input" />
+  </view>
+  <button bindtap="setAlarm" class="set-alarm-btn">设置闹钟</button>
+</view>

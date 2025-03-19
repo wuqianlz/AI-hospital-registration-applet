@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "navigationBarTitleText": "地图",
+  "usingComponents": {
+    "lists":"../../component/list/list"
+  }
+}

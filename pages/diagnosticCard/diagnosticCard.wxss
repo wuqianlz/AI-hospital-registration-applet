@@ -1,0 +1,20 @@
+.block {
+  background-color: var(--bg-color-demo);
+  padding: 32rpx 0;
+  margin: 32rpx 0 15rpx;
+}
+.button-example {
+  padding-top: 15rpx;
+  margin: 28rpx;
+  display: flex;
+}
+
+/* .group-btn-left{
+  margin-right: 15rpx;
+}
+.group-btn{
+  margin-left: 15rpx;
+} */
+.button-example-submit{
+  margin: 28rpx;
+}

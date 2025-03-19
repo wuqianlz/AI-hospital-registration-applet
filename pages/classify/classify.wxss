@@ -1,0 +1,9 @@
+.van-tree-select__nav{
+  height: 100%;
+  width: 250rpx;
+  position: fixed;
+  overflow:scroll;
+}
+.van-tree-select__content{
+  margin-left: 300rpx;
+}

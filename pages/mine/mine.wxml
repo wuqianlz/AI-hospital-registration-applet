@@ -1,0 +1,38 @@
+<view class="box">
+  <view class="top_box">
+    <view class="login">
+      <text bind:tap="onClickButton" wx:if="{{!isLogin}}">登录/注册</text>
+    </view>
+    <view class="patient">
+      <text style="color: rgb(167, 167, 167);" wx:if="{{isLogin}}">当前就诊人：{{userinfo.userName || userinfo.nickName}}</text>
+    </view>
+
+    <view class="patientcat" wx:if="{{!isCard}}">
+      <view class="add_patientcat">
+        <text bind:tap="onClickButtons" style="font-size: 20px;font-weight: bold; ">+添加就诊卡</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="DiagonsticCardListsBox" wx:if="{{isCard}}">
+    <lists class="DiagonsticCardLists"></lists>
+  </view>
+
+  <!-- 分栏 -->
+  <view class="Popup_container"style="margin-top: {{isCard ? '25rpx' : '145rpx'}};">
+    <view class="Popup">
+      <van-cell title="订单中心" icon="cart-o" bind:click="showPopup" />
+      <van-cell title="我的处方" icon="records-o" bind:click="showPopup" />
+      <van-cell title="挂号记录" icon="todo-list-o" bind:click="showPopup" />
+      <van-cell title="报告查询" icon="notes-o" bind:click="showPopup" />
+      <van-cell title="院内导航" icon="guide-o" bind:click="Map_navigation" />
+      <van-cell title="复诊提醒" icon="clock-o" bind:click="JumpRemind" />
+      <van-cell title="退出登录" icon="revoke" bind:click="logout" />
+      <van-cell title="设置" icon="setting-o" bind:click="JumpSettings" />
+      <van-cell title="关于小程序" icon="gold-coin-o" bind:click="About" />
+      <van-cell title="分享小程序" icon="share-o" bind:click="onClick" />
+      <van-share-sheet show="{{ showShare }}" title="立即分享给好友" options="{{ options }}" bind:select="onSelect" bind:close="onClose" />
+    </view>
+  </view>
+
+</view>

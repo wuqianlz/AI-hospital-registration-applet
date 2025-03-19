@@ -1,0 +1,26 @@
+<view class="box">
+  <view class="box_index">
+    <view class="top_text">
+      <text>登录</text>
+    </view>
+    <view class="container">
+      <input class="account-input" type="text" placeholder="请输入账号" confirm-type="next" bindinput="onUserNameInput" />
+      <input class="password-input" type="password" placeholder="请输入密码" confirm-type="done" bindinput="onUserPwdInput" />
+    </view>
+    <view class="rgandfp">
+      <view class="fgpwd">
+        <text>忘记密码?</text>
+      </view>
+      <view style="margin-left: 400rpx;  border-bottom:1rpx solid rgb(0, 0, 0); ">
+        <text bind:tap="onregister">注册</text>
+      </view>
+    </view>
+    <view class="box_login">
+      <button bindtap="login">登录</button>
+      <button type="primary" bindtap="loadByWechat" style="margin-top: 10rpx;">微信授权登录</button>
+      <button bind:tap="getData" style="margin-top: 10rpx;">获取验证码</button>
+    </view>
+
+
+  </view>
+</view>

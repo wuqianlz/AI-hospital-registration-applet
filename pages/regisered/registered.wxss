@@ -1,0 +1,61 @@
+.calendar {
+  --calendar-height: 750rpx;
+}
+.radio-group {
+  margin-top: 20rpx;
+  margin-left: 50rpx;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  margin-top: 10rpx;
+}
+.box_submit {
+  margin-top: 70rpx;
+}
+
+
+
+.registered_input{
+  width: 85%;
+  height: 350rpx;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.registered_input input{
+  height: 90rpx;
+  background-color: rgba(255, 255, 255,0.2);
+  backdrop-filter: blur(30rpx);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 15rpx;
+  text-align: center;
+  box-shadow: 5rpx 0rpx 12rpx rgba(51, 50, 50, 0.1);
+
+}
+
+
+.submit_btn{
+  margin-top: 20rpx;
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+  text-align: center;
+  height: 90rpx;
+  border-radius: 15rpx;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 102, 255, 0.2);
+  backdrop-filter: blur(10rpx);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0rpx 0rpx 15rpx rgb(0, 0, 0,0.1);
+}
+
+

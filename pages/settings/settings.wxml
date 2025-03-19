@@ -1,0 +1,56 @@
+<view class="SettingsBox_container">
+  <!-- 通知栏 -->
+  <view class="Notice-bar">
+    <van-notice-bar left-icon="volume-o" text="个人信息如同数字时代的护身符，我们需时刻警惕，严守底线。强化个人信息保护，不仅是对个人隐私的尊重，更是维护网络空间秩序的关键。" />
+  </view>
+  <!-- 账号 -->
+  <view class="Account_container">
+    <view style="margin-top: 30rpx;margin-bottom: 15rpx;">
+      <text style="font-size: 16px;color: rgb(73, 68, 68);margin-left: 60rpx; ">账号</text>
+    </view>
+    <view class="Account_box_container">
+      <view class="Account_box">
+        <van-cell-group inset>
+          <van-cell title="账号与安全"is-link size="large" bind:click="showPopup" />
+          <van-cell title="隐私设置" is-link size="large" bind:click="showPopup" />
+          <van-cell title="支付设置" is-link size="large" bind:click="showPopup" />
+          <van-cell title="应急联系人" is-link size="large" bind:click="showPopup" />
+        </van-cell-group>
+      </view>
+    </view>
+  </view>
+  <!-- 通用 -->
+  <view class="General_container">
+    <view style="margin-top: 30rpx;margin-bottom: 15rpx;">
+      <text style="font-size: 16px;color: rgb(73, 68, 68);margin-left: 60rpx; ">通用</text>
+    </view>
+    <view class="General_box_container">
+      <view class="General_box">
+        <van-cell-group inset>
+          <van-cell title="通用设置" is-link size="large" bind:click="showPopup" />
+          <van-cell title="通知设置" is-link size="large" bind:click="showPopup" />
+          <van-cell title="通知消息管理" is-link size="large" bind:click="showPopup" />
+          <van-cell title="深色模式" is-link size="large" bind:click="showPopup" />
+          <van-cell title="插件" is-link size="large" bind:click="showPopup" />
+          <van-cell title="长辈模式" is-link size="large" bind:click="showPopup" />
+        </van-cell-group>
+      </view>
+    </view>
+  </view>
+  <!-- 关于 -->
+  <view class="Concerning_container" >
+    <view style="margin-top: 30rpx;margin-bottom: 15rpx;">
+      <text style="font-size: 16px;color: rgb(73, 68, 68);margin-left: 60rpx; ">关于</text>
+    </view>
+    <view class="Concerning_box_container">
+      <view class="Concerning_box">
+        <van-cell-group inset>
+          <van-cell title="反馈与帮助" is-link size="large" bind:click="showPopup" />
+          <van-cell title="用户协议" is-link size="large" bind:click="showPopup" />
+          <van-cell title="了解广告管理与推送" is-link size="large" bind:click="showPopup" />
+          <van-cell title="关于权限" is-link size="large" bind:click="showPopup" />
+        </van-cell-group>
+      </view>
+    </view>
+  </view>
+</view>

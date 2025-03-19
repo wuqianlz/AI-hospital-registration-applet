@@ -1,0 +1,15 @@
+{
+  "navigationBarTitleText": "我的",
+  "usingComponents": {
+    "lists":"../../component/list/list",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-share-sheet": "@vant/weapp/share-sheet/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "t-collapse": "tdesign-miniprogram/collapse/collapse",
+    "t-collapse-panel": "tdesign-miniprogram/collapse-panel/collapse-panel"
+
+  }
+  
+}

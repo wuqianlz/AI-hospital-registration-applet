@@ -1,0 +1,81 @@
+{
+  "pages": [
+    "pages/ad/ad",
+    "pages/index/index",
+    "pages/shop/shop",
+    "pages/classify/classify",
+    "pages/ai/ai",
+    "pages/mine/mine",
+    "pages/register/register",
+    "pages/regisered/registered",
+    "pages/settings/settings",
+    "pages/Map_navigation/Map_navigation",
+    "pages/map/map",
+    "pages/Remind/Remind",
+    "pages/about/about",
+    "pages/diagnosticCard/diagnosticCard"
+  ],
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#007aff",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/shop/shop",
+        "iconPath": "images/shop.png",
+        "selectedIconPath": "images/shop.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "iconPath": "images/classify.png",
+        "selectedIconPath": "images/classify.png",
+        "text": "门诊"
+      },
+      {
+        "pagePath": "pages/ai/ai",
+        "iconPath": "images/ai.png",
+        "selectedIconPath": "images/ai.png",
+        "text": "AI"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mine.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "requiredPrivateInfos": [
+    "getLocation"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序接口的效果展示"
+    }
+  },
+  "usingComponents": {
+    "van-tree-select": "@vant/weapp/tree-select/index",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-search": "@vant/weapp/search/index",
+    "van-calendar": "@vant/weapp/calendar/index",
+    "van-share-sheet": "@vant/weapp/share-sheet/index",
+    "van-config-provider": "@vant/weapp/config-provider/index",
+    "van-notice-bar": "@vant/weapp/notice-bar/index",
+    "t-steps": "tdesign-miniprogram/steps/steps",
+    "t-step-item": "tdesign-miniprogram/step-item/step-item",
+    "t-input": "tdesign-miniprogram/input/input",
+    "t-button": "tdesign-miniprogram/button/button",
+    "t-fab": "tdesign-miniprogram/fab/fab",
+    "t-collapse": "tdesign-miniprogram/collapse/collapse",
+    "t-collapse-panel": "tdesign-miniprogram/collapse-panel/collapse-panel"
+  }
+}

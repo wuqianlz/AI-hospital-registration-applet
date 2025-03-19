@@ -1,0 +1,25 @@
+<view>
+  <view class="register_bg" style="background-color: rgb(250, 250, 250);">
+    <!-- <image src="/images/bg1.jpg" mode="" /> -->
+  </view>
+  <view style=" font-size: 80rpx; margin-left: 60rpx; padding-top: 80rpx ; ">你好</view>
+  <view style=" font-size: 50rpx; color: rgb(117, 115, 115); margin-left: 60rpx; padding-top: 30rpx ; ">请注册账号!</view>
+
+  <view class="register_body">
+    <view class="register_main">
+      <view class="register_input">
+        <input type="text" placeholder="输入账号" bindinput="getAccount"/>
+        <input type="password" placeholder="输入密码" bindinput="getPassword"/>
+        <input type="password" placeholder="确认密码" bindinput="getRePassword"/>
+      </view>
+      <view class="register_btn" bind:tap="register">
+        <text>注册</text>
+      </view>
+      <view class="to_register">
+        <text>已有账号？</text>
+        <view bind:tap="toLogin">去登录-></view>
+      </view>
+    </view>
+    <view class="nullbox"></view>
+  </view>
+</view>

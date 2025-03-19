@@ -1,0 +1,10 @@
+<view class="ad-container">
+  <view class="ad-skip-button">
+    <text class="skip-text" bind:tap="bindad">跳过</text>
+  </view>
+  <view >
+    <image class="ad-image" src="{{adImage}}" ></image>
+  </view>
+</view>
+
+

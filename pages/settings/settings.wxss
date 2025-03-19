@@ -1,0 +1,70 @@
+.SettingsBox_container {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(246, 246, 246);
+}
+
+.Notice-bar {
+  margin-top: 15rpx;
+}
+.Account_container{
+  width: 100%;
+}
+.Account_box_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10rpx;
+  border-radius: 15px;
+}
+.Account_box {
+  background-color: white;
+  width: 92%;
+  border-radius: 15px;
+}
+
+
+
+
+
+
+.General_container{
+  width: 100%;
+}
+.General_box_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10rpx;
+  border-radius: 15px;
+}
+.General_box {
+  background-color: white;
+  width: 92%;
+  border-radius: 15px;
+}
+
+
+
+
+.Concerning_container{
+  width: 100%;
+  padding-bottom: 55rpx;
+}
+.Concerning_box_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10rpx;
+  margin-bottom: 30rpx;
+  border-radius: 15px;
+}
+.Concerning_box {
+  background-color: white;
+  width: 92%;
+  border-radius: 15px;
+}
+

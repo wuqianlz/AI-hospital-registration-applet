@@ -1,0 +1,45 @@
+<!-- <view class="map">
+  <map class="myMap" id="myMap" scale="14" longitude="{{userLon}}" latitude="{{userLat}}" show-location="" markers="{{markers}}" />
+</view>
+<view class="search">
+  <input id="search_input" bindinput="inputKey" focus="{{focus}}"></input>
+  <icon type="search" class="icons" />
+</view>
+<form bindsubmit="formSubmit">
+    <label>起点坐标：<input style="border:1px solid #000;" name="start"></input></label>
+    <label>终点坐标：<input style="border:1px solid #000;" name="dest"></input></label> 
+    <button form-type="submit">路线规划</button>
+</form>
+<view class="list">
+  <lists markers="{{markers}}"></lists>
+</view> -->
+<view class="map">
+  <map class="myMap" id="myMap" scale="14" longitude="{{userLon}}" latitude="{{userLat}}" show-location markers="{{markers}}" polyline="{{polyline}}"/>
+</view>
+<view class="search">
+  <input id="search_input" bindinput="inputKey" placeholder="输入关键字搜索" />
+  <icon type="search" class="icons" />
+</view>
+
+<form bindsubmit="formSubmit">
+    <!--输入起点和终点经纬度坐标，格式为string格式-->
+    <label>起点坐标:
+    <input style="border:1px solid #000;" name="start"></input>
+    </label>
+    <!--多个终点位置示例：39.984060,116.307520;39.984060,116.507520-->
+    <label>终点坐标:
+    <input style="border:1px solid #000;" name="dest"></input>
+    </label>
+    <!--提交表单数据-->
+    <button form-type="submit">计算距离</button>
+</form>
+
+<!--渲染起点经纬度到终点经纬度距离，单位为米-->
+<view wx:for="{{distance}}" wx:key="index">
+    <view>起点到终点{{index+1}}的步行距离为{{item}}米</view>
+</view>
+
+<view class="list">
+  <lists markers="{{markers}}" />
+</view>
+

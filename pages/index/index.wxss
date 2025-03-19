@@ -1,0 +1,65 @@
+.box_index {
+  height: 100%;
+  width: 100%;
+}
+
+.top_text {
+  font-size: 45px;
+  margin-top: 100rpx;
+  margin-left: 60rpx;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 90rpx;
+  padding: 0;
+
+}
+
+.account-input,
+.password-input {
+  width: 80%;
+  height: 90rpx;
+  border: 1px solid #ddd;
+  border-radius: 40rpx;
+  padding-left: 20rpx;
+  margin-top: 20rpx;
+}
+.rgandfp{
+  display: flex;
+  margin-top: 45rpx;
+}
+.fgpwd{
+  margin-left: 80rpx;
+}
+.fgpwd text {
+  border-bottom:1rpx solid rgb(0, 0, 0); 
+}
+.box_login {
+  margin-top: 55rpx;
+}
+
+.box_login button {
+  margin-left: 140rpx;
+  margin-right: 140rpx;
+  border: 0;
+  border-radius: 15px;
+  background: #2ec4b6;
+  text-transform: uppercase;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 30px;
+  outline: none;
+  position: relative;
+  transition: border-radius 2s;
+  -webkit-transition: border-radius 3s;
+}
+button:hover {
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+}

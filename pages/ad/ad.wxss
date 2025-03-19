@@ -1,0 +1,30 @@
+.ad-image {
+  width: 100vw;
+  height: 100vh;
+}
+.ad-skip-button {
+  position: absolute;
+  top: 45rpx; /* 根据需要调整位置 */
+  right: 40rpx; /* 根据需要调整位置 */
+  width: 80rpx; /* 按钮宽度 */
+  height: 80rpx; /* 按钮高度 */
+  background-color: #cfcccc; /* 按钮背景颜色 */
+  border-radius: 100%; /* 按钮圆形边框 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 如果需要点击效果，可以添加以下样式 */
+  opacity: 0.8;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.ad-skip-button:hover {
+  opacity: 1;
+}
+
+.skip-text {
+  font-size: 28rpx;
+  color: #333333;
+}
+
